@@ -40,7 +40,7 @@ stream.on('tweet', function (tweet) {
 //         break; //end loop if at least one word match
 //       }
 // }
-
+console.log('triggered');
 	var tweeText = tweet.text ,
 		createdAt = moment(tweet.created_at).format('MMMM Do YYYY, h:mm:ss a'),
 		user = weet.user.screen_name;
