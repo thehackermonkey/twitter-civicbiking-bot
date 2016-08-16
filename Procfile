@@ -1,1 +1,1 @@
-Procfileworker: node bot.js
+Procfileworker: node streambot.js

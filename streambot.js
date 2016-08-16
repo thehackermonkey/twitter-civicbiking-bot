@@ -23,7 +23,7 @@ var stream = T.stream('statuses/filter', query)
 //The keywords I'm going to look for on the tweets from this user
 //var keywords = ['bici','bicicleta' ,' ciclista', 'ciclo estación']
 //testing keywords
-var keywords = ['hola', 'hello', 'mono']
+//var keywords = ['hola', 'hello', 'mono']
 
 //show me tweets every time the user creates a tweet with one of the keywords
 
