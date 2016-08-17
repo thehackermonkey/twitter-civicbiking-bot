@@ -11,7 +11,7 @@ var query = {
   //follow: '263809798'// @trafico_zmg twitter ID's => 263809798
   // follow: '236640161' //ID for testing @regenhans
 
-  track: 'jabatas'
+  track: 'ReporteCiclista'
   // (you can find the id of a twitter account here : https://tweeterid.com/)
 }
 
@@ -41,9 +41,10 @@ stream.on('tweet', function (tweet) {
 //       }
 // }
 console.log('triggered');
+
 	var tweeText = tweet.text ,
 		createdAt = moment(tweet.created_at).format('MMMM Do YYYY, h:mm:ss a'),
-		user = weet.user.screen_name;
+		user = tweet.user.screen_name;
 
 	var datacsv = [[createdAt, user, tweeText]];
 
@@ -51,10 +52,10 @@ console.log('triggered');
 
 	appendCSV(datacsv, './csv/tweets.csv', function(error){
 	    if (!error) {
-	      console.log('eureka');
+	      console.log('agregado a lista de reportes');
 	    }
 	    else {
-	      console.log('shit');
+	      console.log('algo salió mal al intentar agregar a tweets.csv');
 	    }
 	});
 
@@ -62,16 +63,17 @@ console.log('triggered');
 	console.log(user)
 
 	var username = ' @' + user,
+		reportId = Math.floor(Math.random()*(1000-1)),
 		status = {
-			status: 'Ayúdanos a tener más información sobre el incidente llenando el siguiente formulario https://goo.gl/forms/LV0kgAu0vxf8Rodv2 ' + username
+			status: username + ' ,ayúdanos a tener más información sobre el incidente llenando el siguiente formulario https://goo.gl/ljo1Zq .reporte-Id:' + reportId
 		}
 
 	T.post('statuses/update', status, function(err, data, response) {
 	  if(!err){
-		  console.log('done');
+		  console.log('tweet enviado');
 	  }
 	  else{
-		  console.log('something went wrong:' + err);
+		  console.log('algo salió mal al enviar el tweet:' + err);
 	  }
 	})
 
