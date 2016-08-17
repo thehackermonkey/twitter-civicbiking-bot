@@ -10,7 +10,6 @@ var Twit = require('twit'),
 var query = {
   //follow: '263809798'// @trafico_zmg twitter ID's => 263809798
   // follow: '236640161' //ID for testing @regenhans
-
   track: 'ReporteCiclista'
   // (you can find the id of a twitter account here : https://tweeterid.com/)
 }
