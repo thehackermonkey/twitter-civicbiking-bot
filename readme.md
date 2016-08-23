@@ -2,7 +2,7 @@
 
 ##Sobre el proyecto
 
-Este es un bot cívico que utiliza el streaming API de twitter para encontrar tweets donde se reporten incidentes relacionados a la movilidad no motorizada.
+Este es un bot cívico que utiliza el streaming API de twitter para encontrar tweets donde se reporten incidentes relacionados a la movilidad no motorizada y envia un formulario que recaba datos sobre los mismos. 
 
 [Documento de espacificación de proyecto.](https://github.com/regenhans/twitter-civicbiking-bot/blob/master/spec.md)
 
