@@ -2,24 +2,22 @@
     "name": "biklabot",
     "description": "",
     "license": "project license",
-    "status": "[required] project status (Ideation, Alpha, Beta, Production, or Archival)",
-    "homepage": "project homepage",
-    "repository": "project repository URL",
-    "type": "project type (e.g. Web App, Dataset, Command Line Tool, etc.)",
-    "thumbnail": "project thumbnail image URL",
-    "geography": [
-        "array of geography tags"
-    ],
+    "status": "Alpha",
+    "homepage": "http://regenhans.github.io/twitter-civicbiking-bot/",
+    "repository": "https://github.com/regenhans/twitter-civicbiking-bot",
+    "type": "Twitter Bot",
+    "thumbnail": "",
+    "geography": [ ],
     "contact": {
-        "name": "contact name [required]",
-        "email": "contact email", 
-        "url": "contact URL"
+        "name": "regenhans",
+        "email": "hans@hackergarage.mx",
+        "url": "https://github.com/regenhans/"
     },
     "partners": [
         {
-            "name": "[required if have partner] partner name",
-            "email": "partner email",
-            "url": "partner URL"
+            "name": "GDL en Bici",
+            "email": "",
+            "url": "https://gdlenbici.org/"
         }
     ],
     "data": [
@@ -30,10 +28,8 @@
         }
     ],
     "tags": [
-        "array of project tags"
+        "twitter api", "bot", "stream api"
     ],
-    "links": [
-        "array of project links"
-    ],
+    "links": [],
     "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schemas/schema-v1.json"
 }
