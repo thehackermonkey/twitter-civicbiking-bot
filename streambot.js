@@ -36,11 +36,9 @@ stream.on('tweet', function (tweet) {
 //         var filteredTweet = tweet.text;
 //         console.log(filteredTweet);
 //
-//         break; //end loop if at least one word match
+//         break; //end loop if  at least one word match
 //       }
 // }
-console.log('triggered');
-
 	var tweeText = tweet.text ,
 		createdAt = moment(tweet.created_at).format('MMMM Do YYYY, h:mm:ss a'),
 		user = tweet.user.screen_name;

@@ -1,20 +1,17 @@
-#ZMG-scrapper
-
-####Buscador 'visual' de tweets que contengan palabras definidas en un diccionario
-
-
-En este caso para la cuenta @Trafico_ZMG en búsqueda de información sobre incidentes relacionados a ciclistas.
-
+#Biklabot
 
 ##Guía de uso
 
-
 1. Instalar [Node JS](https://nodejs.org/en/)
 
-2. Instalar twitter-screen-scrape
+2. Haz un fork o clona el repositorio
 
-	`npm install twitter-screen-scrape`
+	`git clone https://github.com/regenhans/biklabot`
 
-3. Ejecutar:
-	
-	`node scraper.js`
+3. Dentro de la carpeta del repositorio ejecuta:
+
+	`npm install`
+
+4. Ejecuta
+
+	`node streambot.js`
