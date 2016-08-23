@@ -1,5 +1,11 @@
 #Biklabot
 
+##Sobre el proyecto
+
+Este es un bot cívico que utiliza el streaming API de twitter para encontrar tweets donde se reporten incidentes relacionados a la movilidad no motorizada.
+
+[Documento de espacificación de proyecto.](https://github.com/regenhans/twitter-civicbiking-bot/blob/master/spec.md)
+
 ##Guía de uso
 
 1. Instalar [Node JS](https://nodejs.org/en/)
